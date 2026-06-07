@@ -267,11 +267,11 @@ export default function RaaS() {
     <div className="bg-white">
 
       {/* â”€â”€ Hero  light theme, exact Red Hat layout â”€â”€ */}
-      <section className="bg-white" style={{ paddingTop: "72px", minHeight: "100vh" }}>
-        <div className="flex items-center" style={{ minHeight: "calc(100vh - 72px)" }}>
+      <section className="bg-white" style={{ paddingTop: "72px" }}>
+        <div className="flex flex-col lg:flex-row items-center" style={{ minHeight: "calc(100vh - 72px)" }}>
 
           {/* Left  text (same proportions as reference) */}
-          <div className="flex-shrink-0 flex flex-col justify-center px-10 lg:px-16 xl:px-20 py-16" style={{ width: "48%" }}>
+          <div className="w-full lg:w-[48%] flex-shrink-0 flex flex-col justify-center px-6 lg:px-16 xl:px-20 py-12 lg:py-16">
             <h1 className="font-extrabold text-[#111827] leading-tight mb-5" style={{ fontSize: "clamp(2rem, 3.5vw, 3.25rem)" }}>
               Red Hat as a Service (RaaS)
             </h1>
@@ -318,7 +318,7 @@ export default function RaaS() {
           </div>
 
           {/* Right  console mockup (light theme) */}
-          <div className="hidden lg:flex flex-1 items-center justify-center pr-10 lg:pr-16 xl:pr-20 py-16">
+          <div className="hidden lg:flex flex-1 items-center justify-center pr-16 xl:pr-20 py-16">
             <div
               className="w-full rounded-2xl overflow-hidden"
               style={{ background: "#ffffff", border: "1px solid #e5e7eb", boxShadow: "0 20px 50px rgba(0,0,0,0.10), 0 4px 16px rgba(0,0,0,0.06)", maxWidth: "580px" }}
